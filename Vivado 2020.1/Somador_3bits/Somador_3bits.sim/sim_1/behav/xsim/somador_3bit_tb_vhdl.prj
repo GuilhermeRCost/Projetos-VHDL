@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Somador_3bits.srcs/sources_1/new/somador_1bit.vhd" \
+"../../../../Somador_3bits.srcs/sources_1/new/somador_3bits.vhd" \
+"../../../../Somador_3bits.srcs/sim_1/new/somador_3bit_tb.vhd" \
+
+# Do not sort compile order
+nosort

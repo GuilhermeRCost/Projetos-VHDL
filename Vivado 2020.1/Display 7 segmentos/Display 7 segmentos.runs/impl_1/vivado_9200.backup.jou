@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul 31 10:59:37 2022
+# Process ID: 9200
+# Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Display 7 segmentos/Display 7 segmentos.runs/impl_1
+# Command line: vivado.exe -log decodificador_7segmentos.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source decodificador_7segmentos.tcl -notrace
+# Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Display 7 segmentos/Display 7 segmentos.runs/impl_1/decodificador_7segmentos.vdi
+# Journal file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Display 7 segmentos/Display 7 segmentos.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source decodificador_7segmentos.tcl -notrace

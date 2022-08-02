@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul 31 09:23:40 2022
+# Process ID: 4268
+# Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Estacionamento/Estacionamento.runs/synth_1
+# Command line: vivado.exe -log quantidade_carros.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source quantidade_carros.tcl
+# Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Estacionamento/Estacionamento.runs/synth_1/quantidade_carros.vds
+# Journal file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Estacionamento/Estacionamento.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source quantidade_carros.tcl -notrace

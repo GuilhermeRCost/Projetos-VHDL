@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Somador 1bit/Somador 1bit.srcs/sources_1/imports/new/somador_1bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity somador_1bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Somador 1bit/Somador 1bit.srcs/sim_1/imports/new/somador_1bit_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity somador_1bit_tb

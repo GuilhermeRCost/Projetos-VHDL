@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul 31 09:51:01 2022
+# Process ID: 564
+# Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Somador 1bit/Somador 1bit.runs/synth_1
+# Command line: vivado.exe -log somador_1bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source somador_1bit.tcl
+# Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Somador 1bit/Somador 1bit.runs/synth_1/somador_1bit.vds
+# Journal file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Somador 1bit/Somador 1bit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source somador_1bit.tcl -notrace
