@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1659467774">
-  <File Type="OPT-HWDEF" Name="quantidade_carros.hwdef"/>
-  <File Type="PA-DCP" Name="quantidade_carros.dcp"/>
-  <File Type="OPT-DCP" Name="quantidade_carros_opt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1659741691">
+  <File Type="PWROPT-DCP" Name="quantidade_carros_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="quantidade_carros_power_routed.rpt"/>
   <File Type="PA-TCL" Name="quantidade_carros.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="quantidade_carros_power_summary_routed.pb"/>
@@ -10,9 +8,10 @@
   <File Type="BG-DRC" Name="quantidade_carros.drc"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="quantidade_carros_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="quantidade_carros_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="quantidade_carros.hwdef"/>
+  <File Type="OPT-DCP" Name="quantidade_carros_opt.dcp"/>
   <File Type="OPT-DRC" Name="quantidade_carros_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="quantidade_carros_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="quantidade_carros_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="quantidade_carros_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="quantidade_carros_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="quantidade_carros_placed.dcp"/>

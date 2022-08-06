@@ -34,11 +34,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity decodificador_7segmentos is
     Port ( BCD : in std_logic_vector (3 downto 0);
            Blank : in STD_LOGIC;
-           seg : out std_logic_vector (7 downto 1));
+           seg : out std_logic_vector (0 to 6));
 end decodificador_7segmentos;
 
 architecture Behavioral of decodificador_7segmentos is
-    signal sSeg:std_logic_vector (7 downto 1);
+    signal sSeg:std_logic_vector (0 to 6);
 begin
     with BCD select
         sSeg <= "0111111" when "0000",

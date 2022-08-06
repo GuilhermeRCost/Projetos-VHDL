@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Aug  2 16:46:32 2022
-# Process ID: 6396
+# Start of session at: Fri Aug  5 20:26:03 2022
+# Process ID: 12844
 # Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Somador 1bit/Somador 1bit.runs/impl_1
 # Command line: vivado.exe -log somador_1bit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source somador_1bit.tcl -notrace
 # Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Somador 1bit/Somador 1bit.runs/impl_1/somador_1bit.vdi

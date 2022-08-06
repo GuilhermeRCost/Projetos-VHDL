@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1659467349">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1659794833">
   <File Type="PA-TCL" Name="decodificador_7segmentos.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="decodificador_7segmentos_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="decodificador_7segmentos_reports.tcl"/>

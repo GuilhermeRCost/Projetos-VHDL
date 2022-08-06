@@ -40,13 +40,13 @@ architecture Behavioral of decodificador_7seg_tb is
     component decodificador_7segmentos
         Port ( BCD : in std_logic_vector (3 downto 0);
                Blank : in STD_LOGIC;
-               seg : out std_logic_vector (7 downto 1));
+               seg : out std_logic_vector (0 to 6));
                        
     end component;
     
     signal sBCD: std_logic_vector (3 downto 0);
     signal sBlank: std_logic;
-    signal sSSeg: std_logic_vector (7 downto 1);
+    signal sSSeg: std_logic_vector (0 to 6);
     
 begin
     

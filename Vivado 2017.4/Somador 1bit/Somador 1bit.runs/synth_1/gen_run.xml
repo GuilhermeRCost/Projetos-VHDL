@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1659469553">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1659741921">
   <File Type="PA-TCL" Name="somador_1bit.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="somador_1bit_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="somador_1bit_reports.tcl"/>

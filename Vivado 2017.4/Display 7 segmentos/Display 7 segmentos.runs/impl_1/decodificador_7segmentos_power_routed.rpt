@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Tue Aug  2 16:10:31 2022
+| Date             : Sat Aug  6 11:08:35 2022
 | Host             : DESKTOP-3I9R82P running 64-bit major release  (build 9200)
 | Command          : report_power -file decodificador_7segmentos_power_routed.rpt -pb decodificador_7segmentos_power_summary_routed.pb -rpx decodificador_7segmentos_power_routed.rpx
 | Design           : decodificador_7segmentos
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 5.904        |
+| Total On-Chip Power (W)  | 5.974        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 5.809        |
+| Dynamic (W)              | 5.878        |
 | Device Static (W)        | 0.096        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 55.5         |
-| Junction Temperature (C) | 54.5         |
+| Max Ambient (C)          | 55.1         |
+| Junction Temperature (C) | 54.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -54,10 +54,10 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Slice Logic    |     0.023 |        7 |       --- |             --- |
 |   LUT as Logic |     0.023 |        4 |     20800 |            0.02 |
-| Signals        |     0.082 |       12 |       --- |             --- |
+| Signals        |     0.151 |       12 |       --- |             --- |
 | I/O            |     5.704 |       12 |       106 |           11.32 |
 | Static Power   |     0.096 |          |           |                 |
-| Total          |     5.904 |          |           |                 |
+| Total          |     5.974 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,7 +67,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.155 |       0.125 |      0.030 |
+| Vccint    |       1.000 |     0.224 |       0.194 |      0.030 |
 | Vccaux    |       1.800 |     0.223 |       0.208 |      0.015 |
 | Vcco33    |       3.300 |     1.610 |       1.609 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -134,7 +134,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| decodificador_7segmentos |     5.809 |
+| decodificador_7segmentos |     5.878 |
 +--------------------------+-----------+
 
 
