@@ -52,8 +52,7 @@ begin
                 "0001111" when "0111", --7
                 "0000000" when "1000", --8
                 "0000100" when "1001", --9
-                "0111111" when others;
-                
-       seg <= "1111111" when Blank = '1' else sSeg;  
-    
+                "0111111" when others;       
+       seg <= "1111111" when Blank = '0' else sSeg;  
+        
 end Behavioral;

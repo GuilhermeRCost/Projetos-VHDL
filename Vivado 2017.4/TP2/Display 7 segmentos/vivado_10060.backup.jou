@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug 16 08:39:34 2022
+# Process ID: 10060
+# Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10616 C:\Users\AC Tecnologia\Documents\Projetos VHDL\Vivado 2017.4\TP2\Display 7 segmentos\Display 7 segmentos.xpr
+# Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/vivado.log
+# Journal file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.xpr}
+update_compile_order -fileset sources_1

@@ -69,12 +69,12 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Display 7 segmentos/Display 7 segmentos.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Display 7 segmentos/Display 7 segmentos.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Display 7 segmentos/Display 7 segmentos.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Display 7 segmentos/Display 7 segmentos.runs/synth_1/decodificador_7segmentos.dcp}}
-  read_xdc {{C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Display 7 segmentos/Display 7 segmentos.srcs/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc}}
+  add_files -quiet {{C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.runs/synth_1/decodificador_7segmentos.dcp}}
+  read_xdc {{C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.srcs/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc}}
   link_design -top decodificador_7segmentos -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

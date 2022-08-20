@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Display 7 segmentos/Display 7 segmentos.runs/synth_1'
+HD_PWD='C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

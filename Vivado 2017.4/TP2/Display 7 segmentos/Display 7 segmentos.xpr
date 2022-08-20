@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/Display 7 segmentos/Display 7 segmentos.xpr">
+<Project Version="7" Minor="35" Path="C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e83c545e4ca04ace9f12ad21fa2bb31d"/>
@@ -32,7 +32,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="basys3"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="6"/>
+    <Option Name="WTXSimLaunchSim" Val="8"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -72,7 +72,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Basys3_Master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
           <Attr Name="ImportTime" Val="1408379954"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -87,7 +87,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/imports/new/decodificador_7seg_tb.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Vivado 2020.1/Display 7 segmentos/Display 7 segmentos.srcs/sim_1/new/decodificador_7seg_tb.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Vivado 2020.1/Display 7 segmentos/Display 7 segmentos.srcs/sim_1/new/decodificador_7seg_tb.vhd"/>
           <Attr Name="ImportTime" Val="1659016906"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

@@ -1,6 +1,6 @@
 
 { 
-    crc :  4567980984789154398  , 
+    crc :  7284114129996456318  , 
     ccp_crc :  0  , 
     cmdline : " -wto e83c545e4ca04ace9f12ad21fa2bb31d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot decodificador_7seg_tb_behav xil_defaultlib.decodificador_7seg_tb" , 
     buildDate : "Dec 15 2017" , 

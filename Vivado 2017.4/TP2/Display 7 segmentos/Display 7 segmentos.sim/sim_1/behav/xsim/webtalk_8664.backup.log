@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Aug 20 09:43:00 2022
+# Process ID: 8664
+# Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.sim/sim_1/behav/xsim/xsim.dir/decodificador_7seg_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP2/Display 7 segmentos/Display 7 segmentos.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/AC -notrace
+couldn't read file "C:/Users/AC": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sat Aug 20 09:43:00 2022...
