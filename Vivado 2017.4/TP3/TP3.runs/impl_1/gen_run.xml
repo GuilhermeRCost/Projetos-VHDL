@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1661003785">
-  <File Type="OPT-HWDEF" Name="operacoes.hwdef"/>
-  <File Type="PA-DCP" Name="operacoes.dcp"/>
-  <File Type="OPT-DCP" Name="operacoes_opt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1661018081">
+  <File Type="PWROPT-DCP" Name="operacoes_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="operacoes_power_routed.rpt"/>
   <File Type="PA-TCL" Name="operacoes.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="operacoes_power_summary_routed.pb"/>
@@ -10,9 +8,10 @@
   <File Type="BG-DRC" Name="operacoes.drc"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="operacoes_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="operacoes_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="operacoes.hwdef"/>
+  <File Type="OPT-DCP" Name="operacoes_opt.dcp"/>
   <File Type="OPT-DRC" Name="operacoes_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="operacoes_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="operacoes_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="operacoes_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="operacoes_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="operacoes_placed.dcp"/>

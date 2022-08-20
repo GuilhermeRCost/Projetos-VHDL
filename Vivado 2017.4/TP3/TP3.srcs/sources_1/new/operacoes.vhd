@@ -69,13 +69,14 @@ begin
               std_logic_vector(sum_sig(NUM_BITS-1 downto 0)) when "10", --0
               std_logic_vector(sSub(NUM_BITS-1 downto 0)) when others;
               
-    with S(1) select
-        Overflow <= ( sum_sig(NUM_BITS)xor sum_sig(NUM_BITS-1)) when '1',
+    with S select
+        Overflow <= (sum_sig(NUM_BITS)xor sum_sig(NUM_BITS-1)) when "10",
+                    (sSub(NUM_BITS)xor sSub(NUM_BITS-1)) when "11",
                     '0' when others;
         
      O <= sO;
      --Atribuindo as saidas do display
      display: decodificador_7segmentos port map(BCD => sO, seg =>sSeg, dp =>sDp);         
-     seg <= "1111111" when S(0) ='1' else sSeg;
+     seg <= "1111111" when S(0) ='0' else sSeg;
      dp<= '1' when S(0) ='0' else sDp;              
 end Behavioral;
