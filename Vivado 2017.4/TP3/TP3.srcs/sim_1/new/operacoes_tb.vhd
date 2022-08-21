@@ -42,17 +42,21 @@ architecture Behavioral of operacoes_tb is
         Port ( A,B : in STD_LOGIC_VECTOR (NUM_BITS-1 downto 0);
                   S: in std_logic_vector (0 to 1);
                   O: out STD_LOGIC_vector (NUM_BITS-1 downto 0);
-                  Overflow: out std_logic;
-                  seg: out std_logic_vector (0 to 6);
-                  dp: out std_logic);
+                  Overflow: out std_logic
+                  --seg: out std_logic_vector (0 to 6);
+                  --dp: out std_logic
+                  );
+                  
+                  
     end component;
     signal sA, sB, sO: STD_LOGIC_VECTOR (3 downto 0);
-    signal sSeg: STD_LOGIC_VECTOR (0 to 6);
+   -- signal sSeg: STD_LOGIC_VECTOR (0 to 6);
     signal sS: std_logic_vector(0 to 1);
-    signal sOver, sDp: std_logic; 
+    signal sOver: std_logic; 
 begin
 
-    uut: operacoes port map(S=>sS,A =>sA, B => sB, O=> sO,  Overflow => sOver, seg => sSeg, dp => sDp);
+    uut: operacoes port map(S=>sS,A =>sA, B => sB, O=> sO,  Overflow => sOver);
+    
     
     stimulus: process
         begin   

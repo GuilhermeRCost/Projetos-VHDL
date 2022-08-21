@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP3/TP3.srcs/sources_1/new/decodificador_7segmentos.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity decodificador_7segmentos
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP3/TP3.srcs/sources_1/new/operacoes.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity operacoes
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP3/TP3.srcs/sim_1/new/operacoes_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operacoes_tb
