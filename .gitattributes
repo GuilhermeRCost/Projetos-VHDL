@@ -4,6 +4,8 @@
 *.tcl linguist-detectable=false
 *.vhd linguist-detectable=true
 *.sh linguist-detectable=false
+*.bat linguist-detectable=false
+*.lpr linguist-detectable=false
 Footer
 © 2022 GitHub, Inc.
 Footer navigation
