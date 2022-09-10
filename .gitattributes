@@ -1,0 +1,11 @@
+*.java linguist-detectable=false
+*.js linguist-detectable=false
+*.html linguist-detectable=false
+*.tcl linguist-detectable=false
+*.vhd linguist-detectable=true
+*.sh linguist-detectable=false
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
