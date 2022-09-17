@@ -43,42 +43,35 @@ entity Contador is
 end Contador;
 
 architecture Behavioral of Contador is
-    signal sQ: std_logic_vector (3 downto 0):= "0000";
-    signal sum_sig, sSub: signed(4 downto 0);
+    signal sQ: signed (4 downto 0):= "00000";
     signal smaxmin: std_logic;
 begin
     --atribuindo valor as saidas
     maxmin <= smaxmin;
-    Q <= sQ;
-    RCOb <= '0' when ((sQ = "1001" and DownUp='0')or (sQ = "0000" and DownUp='1')) else '1';
+    with load select Q <=
+        D when '0',
+        std_logic_vector(sQ(3 downto 0)) when others ;
+        
+    RCOb <= '0' when ((sQ = "01001" and DownUp='0')or (sQ = "00000" and DownUp='1')) else '1';
     
-    smaxmin <= '1' when ((sQ = "0000") or (sQ = "1001")) else '0';
-    
-    --Soma do contador
-    sum_sig <= signed(sQ(3)&sQ) +1;
-    sSub <= signed(sQ(3)&sQ) -1;
-    
-    ResetaContagem: process(load,sQ)
-    begin
-      if (load = '0') then
-        sQ <= D;
-      end if;  
-    end Process;
+    smaxmin <= '1' when ((sQ = "00000") or (sQ = "01001")) else '0';
    
-   Contagem: process(clk,CTENb, load)
+   Contagem: process(clk,CTENb, load, SQ, DownUp, D)
         begin
-            if (rising_edge(clk) and CTENb ='0' and load ='1') then
+            if (load ='0') then
+                sQ <= signed(D(3)&D);
+            elsif (rising_edge(clk) and CTENb ='0') then
                   if (DownUp='0') then
-                    if ( sQ(3)='1' and (sQ(2)='1' or sQ(1)='1' or sQ(0)='1') ) then 
-                        sQ <= "0000";
+                    if ( sQ >= 9 ) then 
+                        sQ <= "00000";
                     else
-                        sQ <= std_logic_vector(sum_sig(3 downto 0));
+                        sQ <= sQ + 1;
                     end if;
                   else
-                     if ( sQ="0000"or sQ="1010" or sQ="1011" or sQ="1100" or sQ="1101" or Sq="1110" or sQ="1111") then 
-                        sQ <= "1001";
+                     if ( sQ <= 0) then 
+                        sQ <= "01001";
                      else
-                        sQ <= std_logic_vector(sSub(3 downto 0));
+                        sQ <= sQ -1;
                      end if;  
                   end if;
             end if;

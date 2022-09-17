@@ -56,6 +56,7 @@ begin
      begin
         sclk<= '0'; sDownUp<='0'; sd<="0111"; sload<='1'; sctenb<= '0'; wait for 2ns;
         sload <= '0'; wait for 2ns;
+        sload <= '1'; wait for 2ns;
         sclk<=not(sclk); wait for 5ns;
         sclk<=not(sclk);wait for 5ns;
         sclk<=not(sclk);wait for 5ns;
@@ -69,9 +70,15 @@ begin
         sclk<=not(sclk);wait for 5ns;
         
         
-        sDownUp<='1'; sclk<=not(sclk);wait for 5ns;
+        sDownUp<='1';sCtenb <='0'; sclk<=not(sclk);wait for 5ns;
         sclk<=not(sclk);wait for 5ns;
         sclk<=not(sclk);wait for 5ns;
+        sclk<=not(sclk);wait for 5ns;
+        sclk<=not(sclk);wait for 5ns;
+        sclk<=not(sclk);wait for 5ns;
+        sclk<=not(sclk);wait for 5ns;sclk<=not(sclk);wait for 5ns;
+        
+        
         sclk<=not(sclk);wait ;
         
      end process;
