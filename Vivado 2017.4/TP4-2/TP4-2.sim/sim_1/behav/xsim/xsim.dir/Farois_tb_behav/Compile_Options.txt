@@ -1,0 +1,1 @@
+-wto "fa73dc6a69224a8eb10614293ff69761" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Farois_tb_behav" "xil_defaultlib.Farois_tb" -log "elaborate.log" 
