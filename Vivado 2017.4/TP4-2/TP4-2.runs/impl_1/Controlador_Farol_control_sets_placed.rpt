@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sun Sep 18 18:10:51 2022
+| Date         : Sun Sep 18 19:43:04 2022
 | Host         : DESKTOP-3I9R82P running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Controlador_Farol_control_sets_placed.rpt
 | Design       : Controlador_Farol
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     2 |
-| Unused register locations in slices containing registers |    10 |
+| Number of unique control sets                            |     3 |
+| Unused register locations in slices containing registers |    18 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,9 +33,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               6 |            2 |
+| No           | No                    | No                     |               5 |            3 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              25 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -45,18 +45,21 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------------+---------------+------------------+------------------+----------------+
-|               Clock Signal               | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+------------------------------------------+---------------+------------------+------------------+----------------+
-|  CLKin_IBUF_BUFG                         |               |                  |                1 |              3 |
-|  FSM_sequential_nextState_reg[2]_i_2_n_0 |               |                  |                1 |              3 |
-+------------------------------------------+---------------+------------------+------------------+----------------+
++------------------+---------------+-------------------+------------------+----------------+
+|   Clock Signal   | Enable Signal |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------+---------------+-------------------+------------------+----------------+
+|  CLKin_IBUF_BUFG |               |                   |                2 |              2 |
+|  sinalCLK/CLK    |               |                   |                1 |              3 |
+|  CLKin_IBUF_BUFG |               | sinalCLK/newClock |                7 |             25 |
++------------------+---------------+-------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 3      |                     2 |
+| 2      |                     1 |
+| 3      |                     1 |
+| 16+    |                     1 |
 +--------+-----------------------+
 
 

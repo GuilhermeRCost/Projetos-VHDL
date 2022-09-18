@@ -82,9 +82,9 @@ begin
     end process;
     
     
-    armazena_estado: process(clkin,left,right,haz)
+    armazena_estado: process(clk,left,right,haz)
     begin
-        if (rising_edge(clkin)) then
+        if (rising_edge(clk)) then
             cState <= nextState;
         end if;
     end process;
@@ -95,7 +95,7 @@ begin
                 --Possiveis entradas para o primeiro estado
                 when IDLE =>
                     if (not(left='1' or right='1' or haz='1')) then
-                    nextstate <= IDLE;
+                        nextstate <= IDLE;
                     else
                         if (left ='1' and right='0' and haz='0') then
                             nextstate <= L1;
@@ -103,7 +103,7 @@ begin
                             if (left ='0' and right='1' and haz='0') then
                                 nextstate <= R1;
                             else
-                                if (left ='0' and right='1' and haz='0') then
+                                if ( (left ='1' and right='1') or  haz='1') then
                                     nextstate <= LR3;
                                 end if;    
                             end if;   

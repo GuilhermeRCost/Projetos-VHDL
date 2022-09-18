@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Sep 18 18:10:25 2022
-# Process ID: 1860
+# Start of session at: Sun Sep 18 19:42:40 2022
+# Process ID: 6100
 # Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4-2/TP4-2.runs/impl_1
 # Command line: vivado.exe -log Controlador_Farol.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Controlador_Farol.tcl -notrace
 # Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4-2/TP4-2.runs/impl_1/Controlador_Farol.vdi
