@@ -33,14 +33,30 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity CLock is
     generic(tempo: time := 1000000000ns);
-    Port ( clk_out : out STD_LOGIC);
+    Port (  clk_in: in std_logic ;
+            clk_out : out STD_LOGIC);
 end CLock;
 
 architecture Behavioral of CLock is
-    signal sClock : std_logic := '0'; 
-  
+       
+   signal prescaler : integer range 0 to 50_000_000 := 50_000_000; 
+   signal counter : integer range 1 to 50_000_000 := 1; 
+   signal newClock : std_logic := '0'; 
+
 begin 
-    --Criando o sinal de clock
-    sclock <= not(sclock) after tempo/2; 
-    clk_out <= sClock;
+
+   clkDivisor : process(clk_in) 
+       begin 
+           if rising_edge(clk_in) then 
+               if counter = prescaler then 
+                   counter <= 1; 
+                   newClock <= not newClock; 
+               else 
+                   counter <= counter + 1; 
+               end if; 
+           end if; 
+       end process; 
+
+   clk_out <= newClock; 
+
 end Behavioral;

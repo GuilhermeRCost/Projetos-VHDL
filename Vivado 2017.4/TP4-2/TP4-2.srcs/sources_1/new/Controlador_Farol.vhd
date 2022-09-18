@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Controlador_Farol is
-    Port ( --CLK : in STD_LOGIC;
+    Port ( CLKin : in STD_LOGIC;
            Left : in STD_LOGIC;
            Right : in STD_LOGIC;
            haz : in STD_LOGIC;
@@ -42,13 +42,14 @@ end Controlador_Farol;
 
 architecture Behavioral of Controlador_Farol is
     component CLock
-        Port ( clk_out : out STD_LOGIC);
+        Port (  clk_in: in std_logic ;
+                clk_out : out STD_LOGIC);
     end component;
     type state is (IDLE,L1,L2,L3,R1,R2,R3,LR3);
     signal cState, nextState: state;
-    signal CLK: std_logic ;
+   signal CLK: std_logic ;
 begin
-    sinalCLK: Clock port map (CLK_out => CLK);
+    sinalCLK: Clock port map (clk_in => CLKin, CLK_out => CLK);
     
     farois: process(cState)
     begin
@@ -81,9 +82,9 @@ begin
     end process;
     
     
-    armazena_estado: process(clk,left,right,haz)
+    armazena_estado: process(clkin,left,right,haz)
     begin
-        if (rising_edge(clk)) then
+        if (rising_edge(clkin)) then
             cState <= nextState;
         end if;
     end process;

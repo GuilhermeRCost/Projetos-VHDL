@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1663530566">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1663535381">
   <File Type="PA-TCL" Name="Controlador_Farol.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Controlador_Farol_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Controlador_Farol_reports.tcl"/>

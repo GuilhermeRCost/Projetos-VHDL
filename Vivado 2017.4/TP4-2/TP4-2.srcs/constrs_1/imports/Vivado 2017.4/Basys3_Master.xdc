@@ -4,9 +4,9 @@
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 ## Clock signal
-#set_property PACKAGE_PIN W5 [get_ports clk]							
-	#set_property IOSTANDARD LVCMOS33 [get_ports clk]
-	#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
+set_property PACKAGE_PIN W5 [get_ports CLKin]							
+	set_property IOSTANDARD LVCMOS33 [get_ports CLKin]
+	create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports CLKin]
  
 ## Switches
 #set_property PACKAGE_PIN V17 [get_ports {sw[0]}]					
@@ -293,4 +293,3 @@ set_property PACKAGE_PIN B15 [get_ports {Right}]
 #set_property PACKAGE_PIN K19 [get_ports QspiCSn]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports QspiCSn]
 
-set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets {CLK}]
