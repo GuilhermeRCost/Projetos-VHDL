@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1663529099">
-  <File Type="OPT-HWDEF" Name="ControleContador.hwdef"/>
-  <File Type="PA-DCP" Name="ControleContador.dcp"/>
-  <File Type="OPT-DCP" Name="ControleContador_opt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1663530800">
+  <File Type="PWROPT-DCP" Name="ControleContador_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="ControleContador_power_routed.rpt"/>
   <File Type="PA-TCL" Name="ControleContador.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="ControleContador_power_summary_routed.pb"/>
@@ -10,9 +8,10 @@
   <File Type="BG-DRC" Name="ControleContador.drc"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="ControleContador_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="ControleContador_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="ControleContador.hwdef"/>
+  <File Type="OPT-DCP" Name="ControleContador_opt.dcp"/>
   <File Type="OPT-DRC" Name="ControleContador_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="ControleContador_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="ControleContador_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="ControleContador_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="ControleContador_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="ControleContador_placed.dcp"/>

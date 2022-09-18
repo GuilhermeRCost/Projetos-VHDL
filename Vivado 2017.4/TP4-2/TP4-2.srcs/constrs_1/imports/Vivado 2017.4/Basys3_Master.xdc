@@ -293,4 +293,4 @@ set_property PACKAGE_PIN B15 [get_ports {Right}]
 #set_property PACKAGE_PIN K19 [get_ports QspiCSn]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports QspiCSn]
 
-set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets {FSM_sequential_cState_reg[2]_i_1}]
+set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets {CLK}]

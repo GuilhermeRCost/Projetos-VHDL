@@ -39,3 +39,5 @@ set_property src_info {type:XDC file:1 line:185 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN M18 [get_ports {Load}]
 set_property src_info {type:XDC file:1 line:188 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN N17 [get_ports {CTENb}]
+set_property src_info {type:XDC file:1 line:296 export:INPUT save:INPUT read:READ} [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets {CLK}]
