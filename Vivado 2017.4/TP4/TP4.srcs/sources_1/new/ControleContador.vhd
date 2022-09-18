@@ -32,7 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity ControleContador is
-Port (  DownUp : in STD_LOGIC;
+Port (     CLK: in std_logic ;
+           DownUp : in STD_LOGIC;
            Load: in std_logic;
            CTENb: in std_logic;
            D : in STD_LOGIC_VECTOR (3 downto 0);
@@ -60,7 +61,9 @@ architecture Behavioral of ControleContador is
                RCOb : out STD_LOGIC);
     end component;
     component clock1hz
-        Port( clkin: out std_logic); 
+         Port( clk_in : in std_logic; 
+             clk_1hz : out std_logic 
+         ); 
     end component;
     
     --sinais auxiliares
@@ -69,9 +72,10 @@ architecture Behavioral of ControleContador is
     signal sclock: std_logic;
 begin
     --Atribuindo os componentes
-    clock: clock1hz port map(clkin => sclock);
+    clock: clock1hz port map(clk_in => CLK, clk_1hz => sclock);
     
-    CIcontador: Contador port map(Clk => sclock, DownUp => DownUp, load => load, ctenb=>ctenb, d=> d,Q=> Q, maxmin => maxmin, RCOB => RCOB );
+    CIcontador: Contador port map(Clk => sclock, DownUp => DownUp, load => load, ctenb=>ctenb, d=> d,Q=> sQ, maxmin => maxmin, RCOB => RCOB );
     display: decodificador_7segmentos port map(BCD => sQ, seg =>sSeg);  
+    Q <= sQ;  
     seg<= sSeg;
 end Behavioral;

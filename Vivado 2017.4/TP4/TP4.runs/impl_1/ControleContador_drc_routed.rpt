@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sun Sep 18 16:54:42 2022
+| Date         : Sun Sep 18 17:38:09 2022
 | Host         : DESKTOP-3I9R82P running 64-bit major release  (build 9200)
 | Command      : report_drc -file ControleContador_drc_routed.rpt -pb ControleContador_drc_routed.pb -rpx ControleContador_drc_routed.rpx
 | Design       : ControleContador
@@ -24,15 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 8
-+-------------+----------+-------------------------------------------------------------+------------+
-| Rule        | Severity | Description                                                 | Violations |
-+-------------+----------+-------------------------------------------------------------+------------+
-| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| LUTLP-2     | Warning  | Combinatorial Loop Allowed                                  | 1          |
-| PDRC-153    | Warning  | Gated clock check                                           | 5          |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
-+-------------+----------+-------------------------------------------------------------+------------+
+             Violations found: 5
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 4          |
++----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -47,11 +45,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-LUTLP-2#1 Warning
-Combinatorial Loop Allowed  
-1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: sQ_reg[4]_P_i_3.
 Related violations: <none>
 
 PDRC-153#1 Warning
@@ -72,22 +65,6 @@ Related violations: <none>
 PDRC-153#4 Warning
 Gated clock check  
 Net CIcontador/sQ_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin CIcontador/sQ_reg[4]_LDC_i_1/O, cell CIcontador/sQ_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#5 Warning
-Gated clock check  
-Net CLK is a gated clock net sourced by a combinational pin sQ_reg[4]_P_i_3/O, cell sQ_reg[4]_P_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT sQ_reg[4]_P_i_3 is driving clock pin of 10 cells. This could lead to large hold time violations. First few involved cells are:
-    CIcontador/sQ_reg[2]_C {FDCE}
-    CIcontador/sQ_reg[3]_C {FDCE}
-    CIcontador/sQ_reg[3]_P {FDPE}
-    CIcontador/sQ_reg[2]_P {FDPE}
-    CIcontador/sQ_reg[4]_C {FDCE}
-
 Related violations: <none>
 
 

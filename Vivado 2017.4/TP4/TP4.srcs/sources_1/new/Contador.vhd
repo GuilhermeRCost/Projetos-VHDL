@@ -52,9 +52,9 @@ begin
         D when '0',
         std_logic_vector(sQ(3 downto 0)) when others ;
         
-    RCOb <= '0' when ((sQ = "01001" and DownUp='0')or (sQ = "00000" and DownUp='1')) else '1';
+    RCOb <= '0' when ((sQ = 9 and DownUp='0')or (sQ = 0 and DownUp='1')) else '1';
     
-    smaxmin <= '1' when ((sQ = "00000") or (sQ = "01001")) else '0';
+    smaxmin <= '1' when ((sQ = 0) or (sQ = 9)) else '0';
    
    Contagem: process(clk,CTENb, load, SQ, DownUp, D)
         begin

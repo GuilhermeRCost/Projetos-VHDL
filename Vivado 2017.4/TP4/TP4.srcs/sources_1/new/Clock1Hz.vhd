@@ -32,17 +32,32 @@ library IEEE;
  --use UNISIM.VComponents.all; 
   
  entity clock1hz is 
- generic(tempo: time := 1000000000ns
-         --tempo: time := 10ns  --para simulação
-           );
-     Port( clkin: out std_logic   ); 
- end clock1hz; 
-  
- architecture Behavioral of clock1hz is 
-     signal sClock : std_logic := '0'; 
-  
- begin 
-    --Criando o sinal de clock
-    sclock <= not(sclock) after tempo; 
-    clkin <= sClock;
- end Behavioral;
+      Port( 
+          clk_in : in std_logic; 
+          clk_1hz : out std_logic 
+      ); 
+  end clock1hz; 
+   
+  architecture Behavioral of clock1hz is 
+   
+      signal prescaler : integer range 0 to 50_000_000 := 50_000_000; 
+      signal counter : integer range 1 to 50_000_000 := 1; 
+      signal newClock : std_logic := '0'; 
+   
+  begin 
+   
+      clkDivisor : process(clk_in) 
+          begin 
+              if rising_edge(clk_in) then 
+                  if counter = prescaler then 
+                      counter <= 1; 
+                      newClock <= not newClock; 
+                  else 
+                      counter <= counter + 1; 
+                  end if; 
+              end if; 
+          end process; 
+   
+      clk_1hz <= newClock; 
+   
+  end Behavioral;

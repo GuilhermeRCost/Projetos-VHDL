@@ -14,25 +14,23 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14428 
+INFO: Helper process launched with PID 6476 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 345.906 ; gain = 100.344
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 345.891 ; gain = 100.203
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ControleContador' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:45]
-INFO: [Synth 8-3491] module 'clock1hz' declared at 'C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/Clock1Hz.vhd:34' bound to instance 'clock' of component 'clock1hz' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'ControleContador' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:46]
+INFO: [Synth 8-3491] module 'clock1hz' declared at 'C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/Clock1Hz.vhd:34' bound to instance 'clock' of component 'clock1hz' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:75]
 INFO: [Synth 8-638] synthesizing module 'clock1hz' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/Clock1Hz.vhd:41]
-	Parameter tempo bound to: 32'b10100100110001101000000000000000 
 INFO: [Synth 8-256] done synthesizing module 'clock1hz' (1#1) [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/Clock1Hz.vhd:41]
-INFO: [Synth 8-3491] module 'Contador' declared at 'C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/Contador.vhd:34' bound to instance 'CIcontador' of component 'Contador' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:74]
+INFO: [Synth 8-3491] module 'Contador' declared at 'C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/Contador.vhd:34' bound to instance 'CIcontador' of component 'Contador' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:77]
 INFO: [Synth 8-638] synthesizing module 'Contador' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/Contador.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'Contador' (2#1) [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/Contador.vhd:45]
-INFO: [Synth 8-3491] module 'decodificador_7segmentos' declared at 'C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/imports/new/decodificador_7segmentos.vhd:34' bound to instance 'display' of component 'decodificador_7segmentos' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:75]
+INFO: [Synth 8-3491] module 'decodificador_7segmentos' declared at 'C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/imports/new/decodificador_7segmentos.vhd:34' bound to instance 'display' of component 'decodificador_7segmentos' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:78]
 INFO: [Synth 8-638] synthesizing module 'decodificador_7segmentos' [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/imports/new/decodificador_7segmentos.vhd:39]
 INFO: [Synth 8-256] done synthesizing module 'decodificador_7segmentos' (3#1) [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/imports/new/decodificador_7segmentos.vhd:39]
-WARNING: [Synth 8-3848] Net sQ in module/entity ControleContador does not have driver. [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:67]
-INFO: [Synth 8-256] done synthesizing module 'ControleContador' (4#1) [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ControleContador' (4#1) [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:46]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 397.840 ; gain = 152.277
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 397.820 ; gain = 152.133
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -41,12 +39,8 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin display:BCD[3] to constant 0 [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:75]
-WARNING: [Synth 8-3295] tying undriven pin display:BCD[2] to constant 0 [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:75]
-WARNING: [Synth 8-3295] tying undriven pin display:BCD[1] to constant 0 [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:75]
-WARNING: [Synth 8-3295] tying undriven pin display:BCD[0] to constant 0 [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/sources_1/new/ControleContador.vhd:75]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 397.840 ; gain = 152.277
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 397.820 ; gain = 152.133
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -54,9 +48,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc]
-WARNING: [Vivado 12-507] No nets matched 'CLK'. [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc:296]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc:296]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.srcs/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ControleContador_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ControleContador_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -65,25 +56,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 710.352 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 725.555 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 710.352 ; gain = 464.789
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 725.555 ; gain = 479.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 710.352 ; gain = 464.789
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 725.555 ; gain = 479.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 710.352 ; gain = 464.789
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 725.555 ; gain = 479.867
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "newClock" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 710.352 ; gain = 464.789
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 725.555 ; gain = 479.867
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -96,12 +88,17 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     26 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 2     
 +---Registers : 
+	               26 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 5     
 	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -109,6 +106,16 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module clock1hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module Contador 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -133,8 +140,9 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clock/newClock" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 710.352 ; gain = 464.789
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 725.555 ; gain = 479.867
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -146,13 +154,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 719.801 ; gain = 474.238
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 725.555 ; gain = 479.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 719.875 ; gain = 474.312
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 741.629 ; gain = 495.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -164,7 +172,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 739.500 ; gain = 493.938
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 742.453 ; gain = 496.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -188,7 +196,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 739.500 ; gain = 493.938
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 742.453 ; gain = 496.766
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -201,7 +209,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 739.500 ; gain = 493.938
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 742.453 ; gain = 496.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -213,25 +221,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 739.500 ; gain = 493.938
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 742.453 ; gain = 496.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 739.500 ; gain = 493.938
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 742.453 ; gain = 496.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 739.500 ; gain = 493.938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 742.453 ; gain = 496.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 739.500 ; gain = 493.938
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 742.453 ; gain = 496.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -244,36 +252,41 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT1 |     2|
-|2     |LUT2 |     8|
-|3     |LUT3 |     9|
-|4     |LUT5 |     6|
-|5     |LUT6 |     9|
-|6     |FDCE |     5|
-|7     |FDPE |     5|
-|8     |LDC  |     4|
-|9     |IBUF |     7|
-|10    |OBUF |    13|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     3|
+|4     |LUT2   |     9|
+|5     |LUT3   |     9|
+|6     |LUT4   |     5|
+|7     |LUT5   |     5|
+|8     |LUT6   |    18|
+|9     |FDCE   |     5|
+|10    |FDPE   |     5|
+|11    |FDRE   |    27|
+|12    |LDC    |     4|
+|13    |IBUF   |     8|
+|14    |OBUF   |    13|
++------+-------+------+
 
 Report Instance Areas: 
 +------+-------------+---------+------+
 |      |Instance     |Module   |Cells |
 +------+-------------+---------+------+
-|1     |top          |         |    68|
-|2     |  CIcontador |Contador |    47|
+|1     |top          |         |   119|
+|2     |  CIcontador |Contador |    53|
+|3     |  clock      |clock1hz |    44|
 +------+-------------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 739.500 ; gain = 493.938
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 742.453 ; gain = 496.766
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 739.500 ; gain = 181.426
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 739.500 ; gain = 493.938
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 742.453 ; gain = 169.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 742.453 ; gain = 496.766
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -282,10 +295,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 6 Warnings, 1 Critical Warnings and 0 Errors encountered.
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 741.605 ; gain = 509.008
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 747.945 ; gain = 515.418
 INFO: [Common 17-1381] The checkpoint 'C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.runs/synth_1/ControleContador.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ControleContador_utilization_synth.rpt -pb ControleContador_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 741.605 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Sep 18 16:53:53 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 747.945 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 18 17:37:15 2022...

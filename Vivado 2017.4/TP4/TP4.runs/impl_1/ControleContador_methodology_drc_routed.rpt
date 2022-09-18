@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sun Sep 18 16:54:42 2022
+| Date         : Sun Sep 18 17:38:09 2022
 | Host         : DESKTOP-3I9R82P running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ControleContador_methodology_drc_routed.rpt -pb ControleContador_methodology_drc_routed.pb -rpx ControleContador_methodology_drc_routed.rpx
 | Design       : ControleContador
@@ -23,13 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 15
+             Violations found: 14
 +-----------+----------+-----------------------------+------------+
 | Rule      | Severity | Description                 | Violations |
 +-----------+----------+-----------------------------+------------+
 | TIMING-17 | Warning  | Non-clocked sequential cell | 10         |
 | TIMING-20 | Warning  | Non-clocked latch           | 4          |
-| TIMING-23 | Warning  | Combinational loop found    | 1          |
 +-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
@@ -102,11 +101,6 @@ Related violations: <none>
 TIMING-20#4 Warning
 Non-clocked latch  
 The latch CIcontador/sQ_reg[4]_LDC cannot be properly analyzed as its control pin CIcontador/sQ_reg[4]_LDC/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-23#1 Warning
-Combinational loop found  
-A timing loop has been detected on a combinational path. A timing arc has been disabled between sQ_reg[4]_P_i_3/I0 and sQ_reg[4]_P_i_3/O to disable the timing loop
 Related violations: <none>
 
 
