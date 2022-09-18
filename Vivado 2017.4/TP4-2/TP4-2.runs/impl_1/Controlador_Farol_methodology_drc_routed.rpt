@@ -1,0 +1,72 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun Sep 18 16:33:35 2022
+| Host         : DESKTOP-3I9R82P running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Controlador_Farol_methodology_drc_routed.rpt -pb Controlador_Farol_methodology_drc_routed.pb -rpx Controlador_Farol_methodology_drc_routed.rpx
+| Design       : Controlador_Farol
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 7
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 3          |
+| TIMING-20 | Warning  | Non-clocked latch           | 3          |
+| TIMING-23 | Warning  | Combinational loop found    | 1          |
++-----------+----------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin FSM_sequential_cState_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin FSM_sequential_cState_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin FSM_sequential_cState_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch FSM_sequential_nextState_reg[0] cannot be properly analyzed as its control pin FSM_sequential_nextState_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch FSM_sequential_nextState_reg[1] cannot be properly analyzed as its control pin FSM_sequential_nextState_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch FSM_sequential_nextState_reg[2] cannot be properly analyzed as its control pin FSM_sequential_nextState_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between FSM_sequential_cState_reg[2]_i_1/I0 and FSM_sequential_cState_reg[2]_i_1/O to disable the timing loop
+Related violations: <none>
+
+

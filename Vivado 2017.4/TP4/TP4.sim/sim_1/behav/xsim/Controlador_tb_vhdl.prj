@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TP4.srcs/sources_1/new/Clock1Hz.vhd" \
+"../../../../TP4.srcs/sources_1/new/Contador.vhd" \
+"../../../../TP4.srcs/sources_1/new/ControleContador.vhd" \
+"../../../../TP4.srcs/sources_1/imports/new/decodificador_7segmentos.vhd" \
+"../../../../TP4.srcs/sim_1/new/Controlador_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -2,10 +2,10 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Sep 17 16:09:07 2022
-# Process ID: 2544
+# Start of session at: Sun Sep 18 16:13:55 2022
+# Process ID: 10544
 # Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.sim/sim_1/behav/xsim/xsim.dir/contador_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.sim/sim_1/behav/xsim/xsim.dir/Controlador_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TP4/TP4.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------

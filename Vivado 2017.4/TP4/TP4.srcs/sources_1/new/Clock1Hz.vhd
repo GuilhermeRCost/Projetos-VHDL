@@ -32,8 +32,10 @@ library IEEE;
  --use UNISIM.VComponents.all; 
   
  entity clock1hz is 
- generic(tempo: time := 1000000000ns);
-     Port( clk: out std_logic   ); 
+ generic(tempo: time := 1000000000ns
+         --tempo: time := 10ns  --para simulação
+           );
+     Port( clkin: out std_logic   ); 
  end clock1hz; 
   
  architecture Behavioral of clock1hz is 
@@ -42,5 +44,5 @@ library IEEE;
  begin 
     --Criando o sinal de clock
     sclock <= not(sclock) after tempo; 
-    clk <= sClock;
+    clkin <= sClock;
  end Behavioral;
