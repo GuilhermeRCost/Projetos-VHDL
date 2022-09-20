@@ -37,22 +37,27 @@ entity Clock_25s is
 end Clock_25s;
 
 architecture Behavioral of Clock_25s is
-    signal prescaler : integer range 0 to 1250_000_000 := 1250_000_000; 
+    signal prescaler : integer range 0 to 1250_000_000 := 1250_000_000;
+    signal counter2 : integer range 1 to 1250_000_000 := 1;
     signal counter : integer range 1 to 1250_000_000 := 1; 
     signal newClock : std_logic := '0'; 
 begin
-    clkDivisor : process(clkin) 
+    COntagem1 : process(clkin) 
           begin 
               if rising_edge(clkin) then 
-                  if counter = prescaler then 
-                      counter <= 1; 
-                      newClock <= not newClock; 
-                  else 
-                      counter <= counter + 1; 
+                  if not(counter = prescaler) then 
+                      counter <= counter + 1;
+                  elsif (counter2 = prescaler) then
+                        counter <= 1; 
+                        counter2 <= 1;
+                        newClock <= not newClock;  
+                  else
+                        counter2 <= counter2 +1;
                   end if; 
               end if; 
-          end process; 
-   
+          end process;
+           
+    
       clkout <= newClock; 
 
 end Behavioral;
