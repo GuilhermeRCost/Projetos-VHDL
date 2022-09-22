@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Sep 22 09:17:03 2022
+# Process ID: 10236
+# Current directory: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TestesClocks/TestesClocks.runs/impl_1
+# Command line: vivado.exe -log Maquina_de_Estados.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Maquina_de_Estados.tcl -notrace
+# Log file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TestesClocks/TestesClocks.runs/impl_1/Maquina_de_Estados.vdi
+# Journal file: C:/Users/AC Tecnologia/Documents/Projetos VHDL/Vivado 2017.4/TestesClocks/TestesClocks.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Maquina_de_Estados.tcl -notrace

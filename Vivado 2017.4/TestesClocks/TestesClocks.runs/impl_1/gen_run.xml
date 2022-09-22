@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1663848888">
+  <File Type="OPT-HWDEF" Name="Maquina_de_Estados.hwdef"/>
+  <File Type="PA-DCP" Name="Maquina_de_Estados.dcp"/>
+  <File Type="OPT-DCP" Name="Maquina_de_Estados_opt.dcp"/>
+  <File Type="ROUTE-PWR" Name="Maquina_de_Estados_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Maquina_de_Estados.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Maquina_de_Estados_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Maquina_de_Estados_reports.tcl"/>
+  <File Type="BG-DRC" Name="Maquina_de_Estados.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Maquina_de_Estados_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Maquina_de_Estados_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="Maquina_de_Estados_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="Maquina_de_Estados_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Maquina_de_Estados_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Maquina_de_Estados_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Maquina_de_Estados_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Maquina_de_Estados_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Maquina_de_Estados_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Maquina_de_Estados_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Maquina_de_Estados_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Maquina_de_Estados_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Maquina_de_Estados_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Maquina_de_Estados_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Maquina_de_Estados_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Maquina_de_Estados_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Maquina_de_Estados_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Maquina_de_Estados_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Maquina_de_Estados_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Maquina_de_Estados_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Maquina_de_Estados.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="Maquina_de_Estados_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Maquina_de_Estados_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Maquina_de_Estados_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Maquina_de_Estados_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Maquina_de_Estados_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Maquina_de_Estados_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="Maquina_de_Estados.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="Maquina_de_Estados_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="Maquina_de_Estados.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Maquina_de_Estados_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="Maquina_de_Estados.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Maquina_de_Estados_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="Maquina_de_Estados.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Maquina_de_Estados_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Maquina_de_Estados_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Maquina_de_Estados_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Maquina_de_Estados_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Maquina_de_Estados_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Maquina_de_Estados_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Maquina_de_Estados_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Maquina_de_Estados_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Maquina_de_Estados.vdi"/>
+  <File Type="ROUTE-CLK" Name="Maquina_de_Estados_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Maquina_de_Estados_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Maquina_de_Estados_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Maquina_de_Estados_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Maquina_de_Estados_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Maquina_de_Estados_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Maquina_de_Estados.nky"/>
+  <File Type="BITSTR-BMM" Name="Maquina_de_Estados_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Maquina_de_Estados.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Maquina_de_Estados.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Maquina_de_Estados.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/Maquina_de_Estados.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Trabalho Final PED1/Controlador_de_Semaforo/Controlador_de_Semaforo.srcs/sources_1/new/Maquina_de_Estados.vhd"/>
+        <Attr Name="ImportTime" Val="1663781288"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Clock_5s.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Trabalho Final PED1/Controlador_de_Semaforo/Controlador_de_Semaforo.srcs/sources_1/new/Clock_5s.vhd"/>
+        <Attr Name="ImportTime" Val="1663686212"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Clock_25s.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Trabalho Final PED1/Controlador_de_Semaforo/Controlador_de_Semaforo.srcs/sources_1/new/Clock_25s.vhd"/>
+        <Attr Name="ImportTime" Val="1663686274"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Maquina_de_Estados"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1408379954"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Vivado 2017.4/Basys3_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
