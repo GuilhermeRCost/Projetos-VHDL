@@ -78,60 +78,70 @@ begin
                  "010" when e4, --amarelo
                  "000" when others;  --vermelho
      
-    Tl <= '1' when (Cstate = e1 or Cstate =e3) else '0';
-    Ts <= not Tl;
+  --  Tl <= '1' when (Cstate = e1 or Cstate =e3) else '0';
+    --Ts <= not Tl;
     
-    
+   
     --transição de estados
     armazena_estado: process(sclk, vS, cstate, nextState)
     begin
        
-           if ( rising_edge(sclk) ) then
+           if ( rising_edge(clk_5s) ) then
                cState <= nextState;
            end if;  
     end process;
     
-     transicao_estado: process(cstate)
+     transicao_estado: process(cstate, Vs)
           begin
               case cstate is
                when e1 => 
+                  if (Tl ='1' and Vs ='0')   then --looping
+                    nextState <= e1;
+                  else
                     nextState <= e2;
+                  end if;
                when e2 =>
                    nextState <= e3;
                when e3 =>
+                  if (Tl ='1' and Vs ='1')   then --looping
+                   nextState <= e3;
+                 else
                    nextState <= e4;
+                 end if;
                when e4 =>
                    nextState <= e1;  
                end case;
           end process;
           
           --Escolhendo o tempo correto
-    sclk <= clk_5s when tl ='0' else clk_25s;
-    clk_out <= sclk;    
+   -- sclk <= clk_5s when tl ='0' else clk_25s;
+    clk_out <= clk_5s;    
      
     
-        SeletorTime: process(Tl, Ts, clk)
+        SeletorTime: process(Tl, clk)
         begin
             
             if  rising_edge(clk) then 
-                if  Tl ='1' then 
-                counter5 <= 1;
+                --if  Tl ='1' then 
+                --counter5 <= 1;
                   if counter25 = prescaler25 then 
                      counter25 <= 1; 
-                      clk_25s <= not clk_25s;
+                     tl<= '0';
+                   --   clk_25s <= not clk_25s;
                   else
+                        tl<='1';
                         counter25 <= counter25 +1;
                   end if;
                 
-                elsif  Ts ='1' then 
-                  counter25 <= 1;
+                --elsif  Ts ='1' then 
+                 -- counter25 <= 1;
                   if counter5 = prescaler5 then 
                       counter5 <= 1; 
                       clk_5s <= not clk_5s; 
                   else 
                       counter5 <= counter5 + 1; 
                   end if; 
-                end if;
+                --end if;
           end if;
         end process;
 end Behavioral;
