@@ -39,7 +39,8 @@ entity Maquina_de_Estados is
            Mr : out STD_LOGIC;
            Sg : out STD_LOGIC;
            Sy : out STD_LOGIC;
-           Sr : out STD_LOGIC);
+           Sr : out STD_LOGIC;
+           clk_out: out std_logic );
 end Maquina_de_Estados;
 
 architecture Behavioral of Maquina_de_Estados is
@@ -50,10 +51,10 @@ architecture Behavioral of Maquina_de_Estados is
     
     --sinais para o clock
     signal clk_5s, clk_25s, sClk : std_logic := '0' ;
-    signal prescaler5 : integer range 0 to 500_000_000 := 500_000_000; 
-    signal counter5 : integer range 1 to 500_000_000 := 1;
+    signal prescaler5 : integer range 0 to 250_000_000 := 250_000_000; 
+    signal counter5 : integer range 1 to 250_000_000 := 1;
     signal prescaler25 : integer range 0 to 1250_000_000 := 1250_000_000;
-    signal counter25, counter25_2 : integer range 1 to 1250_000_000 := 1;
+    signal counter25: integer range 1 to 1250_000_000 := 1;
 begin
     Mg <= sM(0);
     My <= sM(1);
@@ -64,38 +65,28 @@ begin
     Sr <= sS(2);
     
     --atribuindo valor as saidas
-    DecodificaEstado: process(cstate, sM, sS)
-    begin
-        case cState is
-          when  e1 =>
-               sM <= "100"; --verde
-               sS <= "001";  --vermelho
-               Tl <= '1'; 
-               Ts <= '0';
-          when  e2 =>
-               sM <= "010"; --amarelo
-               sS <= "001"; --vermelho
-               Tl <= '0'; 
-               Ts <= '1';
-          when  e3 =>
-               SM <= "001"; --vermelho
-               sS <= "100"; --verde
-               Tl <= '1'; 
-               Ts <= '0';
-          when  e4 =>
-               sM <= "001"; --vermelho
-               sS <= "010"; --amarelo
-               Tl <= '0'; 
-               Ts <= '1';
-       end case;
-    end process;
+      with cState  select
+          sM <= "100" when e1,  --verde
+                "010" when e2,  --amarelo
+                "001" when e3,  --vermelho
+                "001" when e4,  --vermelho
+                "000" when others ; 
+     with cState  select 
+          sS <=  "001" when e1, --vermelho
+                 "001" when e2, --vermelho
+                 "100" when e3, --verde
+                 "010" when e4, --amarelo
+                 "000" when others;  --vermelho
+     
+    Tl <= '1' when (Cstate = e1 or Cstate =e3) else '0';
+    Ts <= not Tl;
     
     
     --transição de estados
     armazena_estado: process(sclk, vS, cstate, nextState)
     begin
        
-           if ( rising_edge(sclk) or ( (cstate = e1) and ( Vs ='1' ) ) or ( (cState =e3) and ( Vs ='0' ) ) ) then
+           if ( rising_edge(sclk) ) then
                cState <= nextState;
            end if;  
     end process;
@@ -104,46 +95,36 @@ begin
           begin
               case cstate is
                when e1 => 
-                        nextState <= e2;
+                    nextState <= e2;
                when e2 =>
-                       nextState <= e3;
+                   nextState <= e3;
                when e3 =>
-                       nextState <= e4;
+                   nextState <= e4;
                when e4 =>
-                       nextState <= e1;  
+                   nextState <= e1;  
                end case;
           end process;
           
-      
-              
+          --Escolhendo o tempo correto
+    sclk <= clk_5s when tl ='0' else clk_25s;
+    clk_out <= sclk;    
+     
+    
         SeletorTime: process(Tl, Ts, clk)
         begin
-        --Zera a contagem dos clocks
-            if ( rising_edge(Tl) or rising_edge(Ts) ) then
-                counter25 <= 1;
-                counter25_2 <= 1;
-                counter5 <= 1;
-                --Seleção do clock
-                if (Tl ='1') then
-                    sclk <= clk_25s;
-                else
-                    sclk <= clk_5s;
-                end if;
-            end if;      
             
             if  rising_edge(clk) then 
                 if  Tl ='1' then 
-                  if not(counter25 = prescaler25) then 
-                      counter25 <= counter25 + 1;
-                  elsif (counter25_2 = prescaler25) then
-                        counter25 <= 1; 
-                        counter25_2 <= 1;
-                        clk_25s <= not clk_25s;  
+                counter5 <= 1;
+                  if counter25 = prescaler25 then 
+                     counter25 <= 1; 
+                      clk_25s <= not clk_25s;
                   else
-                        counter25_2 <= counter25_2 +1;
+                        counter25 <= counter25 +1;
                   end if;
                 
                 elsif  Ts ='1' then 
+                  counter25 <= 1;
                   if counter5 = prescaler5 then 
                       counter5 <= 1; 
                       clk_5s <= not clk_5s; 
