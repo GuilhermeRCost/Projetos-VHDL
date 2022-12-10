@@ -35,7 +35,7 @@ entity TopLevel is
     Port ( CLK : in STD_LOGIC;
            a : in STD_LOGIC;
            rst: in std_logic ;
-           led : out STD_LOGIC_VECTOR (0 to 1));
+           led : out STD_LOGIC_VECTOR (0 to 2));
 end TopLevel;
 
 architecture Behavioral of TopLevel is
@@ -65,5 +65,7 @@ begin
     DividorClock: clock_4s port map (clk_in => clk, rst => rst, clk_out =>sclk);
     Moore: Detector_01101_Moore port map (clk => sclk, rst => rst, a=> a, led1 => sled(0));
     Mealy: Detector_01111_Mealy port map (clk => sclk, rst => rst, a=> a, led2 => sled(1));
-    led <= sled;
+    led(0) <= sled(0);
+    led(1) <= sled(1);
+    led(2) <= sclk;
 end Behavioral;
