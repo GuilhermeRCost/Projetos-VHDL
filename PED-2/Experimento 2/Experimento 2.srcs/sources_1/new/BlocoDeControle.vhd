@@ -44,6 +44,7 @@ entity BlocoDeControle is
            wC_rst : out STD_LOGIC;
            rC_ld: out STD_LOGIC;
            wC_ld : out STD_LOGIC;
+           confereEstado: out std_logic_vector (0 to 4);
            Time_ld : out STD_LOGIC;
            Time_rst: out STD_LOGIC);
 end BlocoDeControle;
@@ -65,6 +66,7 @@ begin
                wC_ld <= '0';
                Time_ld <= '0';
                Time_rst <= '0';
+               confereEstado <= "10000";
                
             when eWait =>
                   len <= '0';
@@ -75,6 +77,7 @@ begin
                   wC_ld <= '1';
                   Time_ld <= '0';
                   Time_rst <= '1';
+                  confereEstado <= "01000";
                   
             when count =>
                   len <= '1';
@@ -85,6 +88,7 @@ begin
                   wC_ld <= '0';
                   Time_ld <= '0';
                   Time_rst <= '0';
+                  confereEstado <= "00100";
                   
             when eSlow =>
                 len <= '0';
@@ -95,6 +99,7 @@ begin
                 wC_ld <= '0';
                 Time_ld <= '0';
                 Time_rst <= '0';
+                confereEstado <= "00010";
                 
             when eDone =>
                 len <= '0';
@@ -105,7 +110,7 @@ begin
                 wC_ld <= '0';
                 Time_ld <= '1';
                 Time_rst <= '0';
-                
+                confereEstado <= "00001";
                 
             when others =>
                len <= '0';
@@ -116,6 +121,7 @@ begin
                wC_ld <= '0';
                Time_ld <= '0';
                Time_rst <= '0';
+               confereEstado <= "11111";
         end case;
     end process;
     

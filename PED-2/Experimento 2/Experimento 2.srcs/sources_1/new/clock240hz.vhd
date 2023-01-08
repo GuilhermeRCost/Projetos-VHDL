@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 29.12.2022 16:51:05
+-- Create Date: 08.01.2023 13:43:17
 -- Design Name: 
--- Module Name: clock_1hz - Behavioral
+-- Module Name: clock240hz - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -24,21 +24,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
-use IEEE.NUMERIC_STD.ALL;
+--use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity clock_1hz is
+entity clock240hz is
     Port ( Clk_in : in STD_LOGIC;
            rst: in std_logic ;
            clk_out : out STD_LOGIC);
-end clock_1hz;
+end clock240hz;
 
-architecture Behavioral of clock_1hz is
-   constant prescaler : integer := 50_000; 
+architecture Behavioral of clock240hz is
+constant prescaler : integer := 50_000; 
    signal counter : integer range 0 to 50_000 := 0; 
    signal newClock : std_logic := '0'; 
 begin
@@ -58,6 +58,5 @@ begin
           end process; 
    
       clk_out <= newClock; 
-
 
 end Behavioral;
